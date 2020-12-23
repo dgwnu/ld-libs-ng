@@ -125,6 +125,46 @@
           }
         }
       }
+    },
+    "sparql-client": {
+      "projectType": "library",
+      "root": "projects/sparql-client",
+      "sourceRoot": "projects/sparql-client/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "tsConfig": "projects/sparql-client/tsconfig.lib.json",
+            "project": "projects/sparql-client/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/sparql-client/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/sparql-client/src/test.ts",
+            "tsConfig": "projects/sparql-client/tsconfig.spec.json",
+            "karmaConfig": "projects/sparql-client/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/sparql-client/tsconfig.lib.json",
+              "projects/sparql-client/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "ld-libs-ng"
