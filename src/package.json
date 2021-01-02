@@ -24,7 +24,11 @@
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.2",
-    "@dgwnu/ld-tools-ts": "git+https://github.com/dgwnu/ld-tools-ts.git"
+    "@dgwnu/ld-tools-ts": "git+https://github.com/dgwnu/ld-tools-ts.git",
+    "@dgwnu/fuseki-cli": "git+https://github.com/dgwnu/fuseki-cli.git",
+    "rdflib-ts": "1.2.58",
+    "mkdirp": "^1.0.4",
+    "bluebird": "^3.7.2"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.1100.5",
