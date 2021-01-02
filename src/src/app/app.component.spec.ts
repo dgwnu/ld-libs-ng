@@ -30,6 +30,6 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('ld-libs-ng app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('ld-libs-ng-dev app is running!');
   });
 });
