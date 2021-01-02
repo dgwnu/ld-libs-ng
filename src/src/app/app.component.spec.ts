@@ -20,10 +20,10 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'ld-libs-ng'`, () => {
+  it(`should have as title 'ld-libs-ng-dev'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('ld-libs-ng');
+    expect(app.title).toEqual('ld-libs-ng-dev');
   });
 
   it('should render title', () => {
